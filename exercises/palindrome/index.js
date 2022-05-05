@@ -11,12 +11,7 @@ function palindrome(str) {
 
     let reversed = str.split('').reverse().join('')
 
-    if (reversed == str) {
-        return true
-    }
-    else {
-        return false
-    }
+    return str === reversed
 }
 
 module.exports = palindrome;
