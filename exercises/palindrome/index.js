@@ -9,9 +9,14 @@
 
 function palindrome(str) {
 
-    let reversed = str.split('').reverse().join('')
+    return str.split('').every((char, i) => {
+        return char === str[str.length - i - 1]
+    })
 
-    return str === reversed
+
+    // let reversed = str.split('').reverse().join('')
+
+    // return str === reversed
 }
 
 module.exports = palindrome;
